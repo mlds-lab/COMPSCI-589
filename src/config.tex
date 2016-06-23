@@ -1,0 +1,95 @@
+%%%%%%%%%%%%%%%%
+% Change the macros below to configure the title slides
+% for your course.
+\newcommand{\coursename}{COMPSCI 589}
+\newcommand{\instructor}{Benjamin M. Marlin}
+\newcommand{\university}{University of Massachusetts Amherst}
+\newcommand{\department}{College of Information and Computer Sciences}
+%%%%%%%%%%%%%%%%
+
+
+\newcommand{\settitlecard}[2]{
+  \title[\coursename  Lecture #1] 
+    {\coursename \\ Lecture #1: #2}
+     \author[\instructor]{\instructor}
+     \institute[\university]{
+     \department\\
+     \university
+   }
+\date{}
+}
+
+\newcommand{\maketitlepage}{
+  \begin{frame}
+  \titlepage
+  \center{
+    %If you use the slides unmodified, retain the attribution below
+    \tiny{Slides by Benjamin M. Marlin (marlin@cs.umass.edu). \\
+    \vspace{-1em}Created with support from National Science Foundation Award\# IIS-1350522. 
+    %If you modify the slides, please retain the alternate attribution below
+    %\tiny{Based on slides by Benjamin M. Marlin (marlin@cs.umass.edu). \\    
+    %\vspace{-1em}Created with support from National Science Foundation Award\# IIS-1350522. 
+    }                                              
+  }  
+  \end{frame}
+}
+
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Outline}
+    \tableofcontents[currentsection,subsectionstyle=hide]
+  \end{frame}
+}
+
+
+\newcommand{\cut}[1]{}
+
+\newcommand{\iconbox}[4]{
+  \only<#1-#2>{
+    \begin{columns}[T]
+      \column{0.5in}
+           \includegraphics[width=0.5in]{#3}
+       \column{3.7in}
+            #4
+    \end{columns}
+    \medskip
+    \medskip
+    \medskip
+  }
+}
+
+\mode<presentation>{
+  \usepackage{../beamertheme589theme}
+  \setbeamercovered{invisible}
+}
+
+\mode<handout>{
+  \usepackage{../beamertheme589theme}
+  \setbeamercovered{transparent}
+}
+
+
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[noend]{algorithmic}
+\usepackage{algorithm}
+\usepackage{listings}
+
+\renewcommand\mathfamilydefault{\rmdefault}
+
+\newcommand{\setA}{\mathcal{A}}
+\newcommand{\setB}{\mathcal{B}}
+\newcommand{\setS}{\mathcal{S}}
+\newcommand{\setV}{\mathcal{V}}
+\DeclareMathOperator*{\union}{\bigcup}
+\DeclareMathOperator*{\intersection}{\bigcap}
+\DeclareMathOperator*{\Val}{Val}
+\newcommand{\mbf}[1]{{\mathbf{#1}}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\sign}{sign}
+\newcommand{\deriv}[2]{\frac{\partial{#1}}{\partial{#2}}}

@@ -1,0 +1,168 @@
+<h1 id="compsci_589_open_source_ml_course">COMPSCI 589: Open Source ML Course</h1>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>COMPSCI 589 is an open source applied machine learning course designed for senior undergraduate students and junior (masters-level) graduate students. The course materials have been developed by <a href="http://www.cs.umass.edu/~marlin">Prof. Benjamin M. Marlin</a> at the <a href="http://www.cs.umass.edu">College of Information and Computer Sciences, University of Massachusetts Amherst</a> since fall 2014. </p>
+
+<h2 id="how_to_use_these_materials">How To Use These Materials</h2>
+
+<p>The course slides were created in <a href="https://www.latex-project.org/">Latex</a> using the <a href="https://www.ctan.org/pkg/beamer?lang=en">Beamer</a> package. Pre-compiled PDF slides are available in the <a href="slides/">slides</a> directory. Pre-compiled PDF handouts (without animations) are available in the <a href="handouts/">handouts</a> directory. The majority of the lectures also have accompanying <a href="https://ipython.org/notebook.html">Jupyter notebook</a> demos. The demos are located in the <a href="demos/code">demos/code</a> directory. </p>
+
+<p>The Latex source for the slides is available in the <a href="src/">src</a> directory. The title slide for each lecture can by customized with your course number, your name, and your affiliation by editing the <a href="src/config.tex">src/config.tex</a> file and recompiling the slides. To recompile the slides, you will need pdflatex installed with the Beamer package. Slides and handouts can be recompiled individually, or using the supplied <em>compile_all_slides.sh</em> <a href="https://www.gnu.org/software/bash/">bash</a> script. </p>
+
+<p>The demos require <a href="https://www.python.org/download/releases/2.7/">Python 2.7</a>, <a href="https://ipython.org/notebook.html">Jupyter notebook</a>, and a current version of <a href="http://scikit-learn.org/stable/">scikit-learn</a>. Some demos use additional packages including <a href="http://deeplearning.net/software/theano/">Theano</a> and <a href="https://www.wxpython.org/">wxPython</a>.</p>
+
+<h2 id="course_topics_and_readings">Course Topics and Readings</h2>
+
+<p>The course introduces core machine learning models and algorithms for classification, regression,  clustering, and dimensionality reduction. On the theory side, the course focuses on understanding models and the relationships between them. On the applied side, the course focuses on effectively using machine learning methods to solve real-world problems with an emphasis on model selection, regularization, design of experiments, and presentation and interpretation of results. The course also explores the use of machine learning methods across different computing contexts including desktop and cloud computing. The course focuses on <a href="https://www.python.org/">Python</a>, <a href="http://scikit-learn.org/stable/">Scikit-Learn</a>, and <a href="http://spark.apache.org/">Apache Spark</a> as toolkits. </p>
+
+<p>The readings are taken from <a href="http://www-bcf.usc.edu/~gareth/ISL/">An Introduction to Statistical Learning</a> [ISL], and <a href="http://statweb.stanford.edu/%7Etibs/ElemStatLearn/">The Elements of Statistical Learning, Second Edition</a> [ESL], both of which are freely available. </p>
+
+<h2 id="course_contents">Course Contents</h2>
+
+<h3 id="unit_1_classification">Unit 1: Classification</h3>
+
+<ul>
+<li><p><strong>Lecture 1: Course Overview - Supervised and Unsupervised Learning</strong></p>
+
+<p>Materials: <a href="slides/slides01.pdf">Slides</a> | <a href="handouts/handout01.pdf">Handouts</a> | <a href="src/Lecture01/lecture.tex">latex</a></p>
+
+<p>Reading: ISL   Section 1 (p.1-9),  Section 2.1.4 (p27-29)  </p></li>
+<li><p><strong>Lecture 2: KNN and Decision Trees</strong></p>
+
+<p>Materials: <a href="slides/slides02.pdf">Slides</a> | <a href="handouts/handout02.pdf">Handouts</a> | <a href="src/Lecture02/lecture.tex">latex</a></p>
+
+<p>Reading: ESL Section 2.3.2 (p.14-16), ISL:  Section 8 (p. 303, 311-314), ESL Section 2.5 (p.22-23)</p></li>
+<li><p><strong>Lecture 3: Naïve Bayes, LDA, and Logistic Regression</strong></p>
+
+<p>Materials: <a href="slides/slides03.pdf">Slides</a> | <a href="handouts/handout03.pdf">Handouts</a> | <a href="src/Lecture03/lecture.tex">latex</a></p>
+
+<p>Reading: ESL Section 4 (p. 101-102, 106-110, 119-120, 127-132)</p></li>
+<li><p><strong>Lecture 4: Overfitting, Regularization and Crossvalidation</strong></p>
+
+<p>Materials: <a href="slides/slides04.pdf">Slides</a> | <a href="handouts/handout04.pdf">Handouts</a> | <a href="src/Lecture04/lecture.tex">latex</a></p>
+
+<p>ISL  Section 2.2.3 (p. 37),   Section 5 (176-183, 184-186)</p></li>
+<li><p><strong>Lecture 5: Support Vector Machines, Basis Expansion, and Kernels</strong></p>
+
+<p>Materials: <a href="slides/slides05.pdf">Slides</a> | <a href="handouts/handout05.pdf">Handouts</a> | <a href="src/Lecture05/lecture.tex">latex</a></p>
+
+<p>Reading: ISL  Section 9.5 (p.356-359)</p></li>
+<li><p><strong>Lecture 6: Neural Networks and Deep Learning</strong></p>
+
+<p>Materials: <a href="slides/slides06.pdf">Slides</a> | <a href="handouts/handout06.pdf">Handouts</a> | <a href="src/Lecture06/lecture.tex">latex</a></p>
+
+<p>Reading: ESL  Section 11.3 (p.392-395, 397-409)</p></li>
+<li><p><strong>Lecture 7: Ensembles and Classification</strong></p>
+
+<p>Materials: <a href="slides/slides07.pdf">Slides</a> | <a href="handouts/handout07.pdf">Handouts</a> | <a href="src/Lecture07/lecture.tex">latex</a></p>
+
+<p>Reading: ISL  Section 8.2 (p.316-324)</p></li>
+</ul>
+
+<h3 id="unit_2_regression">Unit 2: Regression</h3>
+
+<ul>
+<li><p><strong>Lecture 8: Linear Regression, Ridge and the Lasso</strong></p>
+
+<p>Materials: <a href="slides/slides08.pdf">Slides</a> | <a href="handouts/handout08.pdf">Handouts</a> | <a href="src/Lecture08/lecture.tex">latex</a></p>
+
+<p>Reading: ISL  Section 3.1 (p.61-63),  Section 3.2 (p.71-75),  Section 6.2 (p.214-224),  Section 3.3.2 (p.86-92)</p></li>
+<li><p><strong>Lecture 9: KNN,  Regression Trees, and Feature Selection</strong></p>
+
+<p>Materials: <a href="slides/slides09.pdf">Slides</a> | <a href="handouts/handout09.pdf">Handouts</a> | <a href="src/Lecture09/lecture.tex">latex</a></p>
+
+<p>Reading: ISL  Section 3.5 (p.104-109),  Section 8.1.1 (p.304-311),  Section 6.1 (205-210)</p></li>
+<li><p><strong>Lecture 10:  Support Vector and Neural Network Regression</strong></p>
+
+<p>Materials: <a href="slides/slides10.pdf">Slides</a> | <a href="handouts/handout10.pdf">Handouts</a> | <a href="src/Lecture10/lecture.tex">latex</a></p>
+
+<p>Reading: ESL  Section 11.3 (392-401), ESL  Section 12.3.6 (p.434-438) </p></li>
+<li><p><strong>Lecture 11: KOLS and Gaussian Process Regression</strong></p>
+
+<p>Materials: <a href="slides/slides11.pdf">Slides</a> | <a href="handouts/handout11.pdf">Handouts</a> | <a href="src/Lecture11/lecture.tex">latex</a></p>
+
+<p>Reading: <a href="http://mlg.eng.cam.ac.uk/pub/pdf/Ras04.pdf">Gaussian Processes in Machine Learning</a></p></li>
+</ul>
+
+<h3 id="unit_3_large_scale_learning">Unit 3: Large-Scale Learning</h3>
+
+<ul>
+<li><p><strong>Lecture 12: Introduction to Data Parallel Computing</strong></p>
+
+<p>Materials: <a href="slides/slides12.pdf">Slides</a> | <a href="handouts/handout12.pdf">Handouts</a> | <a href="src/Lecture12/lecture.tex">latex</a></p></li>
+<li><p><strong>Lecture 13: Introduction to Apache Spark</strong></p>
+
+<p>Materials: <a href="slides/slides13.pdf">Slides</a> | <a href="handouts/handout13.pdf">Handouts</a> | <a href="src/Lecture13/lecture.tex">latex</a></p>
+
+<p>Reading: <a href="http://www.cs.berkeley.edu/%7Ematei/papers/2012/nsdi_spark.pdf">Resilient Distributed Datasets</a></p>
+
+<p>Reading: <a href="http://spark.apache.org/docs/latest/programming-guide.html">Spark Programming Guide</a>  </p></li>
+<li><p><strong>Lecture 14: Data Parallel Programming Abstractions in Spark</strong></p>
+
+<p>Materials: <a href="slides/slides14.pdf">Slides</a> | <a href="handouts/handout14.pdf">Handouts</a> | <a href="src/Lecture14/lecture.tex">latex</a></p>
+
+<p>Reading: <a href="Spark Exercises from AMP Camp 4">Spark Exercises from AMP Camp 4</a></p>
+
+<p>Video: <a href="https://youtu.be/e-56inQL5hQ?list=PLbDk7g7PotW3FF9w-JsEXsxrtDmWjduWP">AMP Camp 3 Spark Tutorial</a></p></li>
+</ul>
+
+<h3 id="unit_4_clustering">Unit 4: Clustering</h3>
+
+<ul>
+<li><p><strong>Lecture 15: Hierarchical Clustering</strong></p>
+
+<p>Materials: <a href="slides/slides15.pdf">Slides</a> | <a href="handouts/handout15.pdf">Handouts</a> | <a href="src/Lecture15/lecture.tex">latex</a></p>
+
+<p>Reading: ISL  Section 10.3.2 (p.390-401)</p></li>
+<li><p><strong>Lecture 16: K-Means Clustering</strong></p>
+
+<p>Materials: <a href="slides/slides16.pdf">Slides</a> | <a href="handouts/handout16.pdf">Handouts</a> | <a href="src/Lecture16/lecture.tex">latex</a></p>
+
+<p>Reading: ISL  Section 10.3.1 (p.386-390), ESL  Section 6.8 (p.214-216),  Section 8.5 (p.272-276)</p></li>
+<li><p><strong>Lecture 17: Mixture Models</strong></p>
+
+<p>Materials: <a href="slides/slides17.pdf">Slides</a> | <a href="handouts/handout17.pdf">Handouts</a> | <a href="src/Lecture17/lecture.tex">latex</a></p>
+
+<p>Reading: ISL  Section 10.3.1 (p.386-390), ESL  Section 6.8 (p.214-216),  Section 8.5 (p.272-276)</p></li>
+</ul>
+
+<h3 id="unit_5_dimensionality_reduction">Unit 5: Dimensionality Reduction</h3>
+
+<ul>
+<li><p><strong>Lecture 18: Linear Dimensionality Reduction and SVD</strong></p>
+
+<p>Materials: <a href="slides/slides18.pdf">Slides</a> | <a href="handouts/handout18.pdf">Handouts</a> | <a href="src/Lecture18/lecture.tex">latex</a></p>
+
+<p>Reading: ESL  Section 14.15.1 (p.534-536)</p></li>
+<li><p><strong>Lecture 19: Principal Component Analysis</strong></p>
+
+<p>Materials: <a href="slides/slides19.pdf">Slides</a> | <a href="handouts/handout19.pdf">Handouts</a> | <a href="src/Lecture19/lecture.tex">latex</a></p>
+
+<p>Reading: ISL  Section 10.3 (p.374-385)</p></li>
+<li><p><strong>Lecture 20: Sparse Coding, Non-negative Matrix Factorization, and Independent Component Analysis</strong></p>
+
+<p>Materials: <a href="slides/slides20.pdf">Slides</a> | <a href="handouts/handout20.pdf">Handouts</a> | <a href="src/Lecture20/lecture.tex">latex</a></p>
+
+<p>Reading: ESL  Section 14.6 (p.553-557),  Section 14.7 (p.557-570), </p>
+
+<p>Reading: <a href="http://ufldl.stanford.edu/wiki/index.php/Sparse_Coding">Sparse Coding</a></p></li>
+<li><p><strong>Lecture 21: Kernel PCA and Spectral Clustering</strong></p>
+
+<p>Materials: <a href="slides/slides21.pdf">Slides</a> | <a href="handouts/handout21.pdf">Handouts</a> | <a href="src/Lecture21/lecture.tex">latex</a></p>
+
+<p>Reading: ESL  Section 14.15.3 (p.544-547), ESL  Section 14.15.4 (p.547-550),</p></li>
+<li><p><strong>Lecture 22: Multidimensional Scaling and Isomap</strong></p>
+
+<p>Materials: <a href="slides/slides22.pdf">Slides</a> | <a href="handouts/handout22.pdf">Handouts</a> | <a href="src/Lecture22/lecture.tex">latex</a></p>
+
+<p>Reading: ESL  Section 14.8-9 (p.570-576)</p></li>
+</ul>
+
+<h2 id="legal">Legal</h2>
+
+<p>Copyright 2016 Benjamin M. Marlin. These materials are provided under the <a href="http://choosealicense.com/licenses/gpl-3.0/">GNU GENERAL PUBLIC LICENSE Version 3</a> (GPL 3). As permitted by GPL 3 Section 7(b), all attributions present in this work must be preserved in all copies and derived works.</p>
+
+<h2 id="support">Support</h2>
+
+<p>The development of these materials is supported by the <a href="http://www.nsf.gov">National Science Foundation</a> through award # IIS-1350522.</p>
