@@ -1,10 +1,10 @@
 # COMPSCI 589: Open Source ML Course
 
-##Introduction
+## Introduction
 
 COMPSCI 589 is an open source applied machine learning course designed for senior undergraduate students and junior (masters-level) graduate students. The course materials have been developed by [Prof. Benjamin M. Marlin](http://www.cs.umass.edu/~marlin) at the [College of Information and Computer Sciences, University of Massachusetts Amherst](http://www.cs.umass.edu) since fall 2014. 
 
-##How To Use These Materials
+## How To Use These Materials
 
 The course slides were created in [Latex](https://www.latex-project.org/) using the [Beamer](https://www.ctan.org/pkg/beamer?lang=en) package. Pre-compiled PDF slides are available in the [slides](slides/) directory. Pre-compiled PDF handouts (without animations) are available in the [handouts](handouts/) directory. The majority of the lectures also have accompanying [Jupyter notebook](https://ipython.org/notebook.html) demos. The demos are located in the [demos/code](demos/code) directory. 
 
@@ -12,13 +12,13 @@ The Latex source for the slides is available in the [src](src/) directory. The t
 
 The demos require [Python 2.7](https://www.python.org/download/releases/2.7/), [Jupyter notebook](https://ipython.org/notebook.html), and a current version of [scikit-learn](http://scikit-learn.org/stable/). Some demos use additional packages including [Theano](http://deeplearning.net/software/theano/) and [wxPython](https://www.wxpython.org/).
 
-##Course Topics and Readings
+## Course Topics and Readings
 
 The course introduces core machine learning models and algorithms for classification, regression,  clustering, and dimensionality reduction. On the theory side, the course focuses on understanding models and the relationships between them. On the applied side, the course focuses on effectively using machine learning methods to solve real-world problems with an emphasis on model selection, regularization, design of experiments, and presentation and interpretation of results. The course also explores the use of machine learning methods across different computing contexts including desktop and cloud computing. The course focuses on [Python](https://www.python.org/), [Scikit-Learn](http://scikit-learn.org/stable/), and [Apache Spark](http://spark.apache.org/) as toolkits. 
 
 The readings are taken from [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/) [ISL], and [The Elements of Statistical Learning, Second Edition](http://statweb.stanford.edu/%7Etibs/ElemStatLearn/) [ESL], both of which are freely available. 
 
-##Course Contents
+## Course Contents
 
 ### Unit 1: Classification
 
@@ -64,7 +64,7 @@ The readings are taken from [An Introduction to Statistical Learning](http://www
 
    Reading: ISL  Section 8.2 (p.316-324)
 
-###Unit 2: Regression
+### Unit 2: Regression
 * **Lecture 8: Linear Regression, Ridge and the Lasso**
 
    Materials: [Slides](slides/slides08.pdf) | [Handouts](handouts/handout08.pdf) | [latex](src/Lecture08/lecture.tex)
@@ -90,7 +90,7 @@ The readings are taken from [An Introduction to Statistical Learning](http://www
 
    Reading: [Gaussian Processes in Machine Learning](http://mlg.eng.cam.ac.uk/pub/pdf/Ras04.pdf)
 
-###Unit 3: Large-Scale Learning
+### Unit 3: Large-Scale Learning
 
 * **Lecture 12: Introduction to Data Parallel Computing**
 
@@ -113,7 +113,7 @@ The readings are taken from [An Introduction to Statistical Learning](http://www
 	
     Video: [AMP Camp 3 Spark Tutorial](https://youtu.be/e-56inQL5hQ?list=PLbDk7g7PotW3FF9w-JsEXsxrtDmWjduWP)
 
-###Unit 4: Clustering
+### Unit 4: Clustering
 
 * **Lecture 15: Hierarchical Clustering**
 
@@ -133,7 +133,7 @@ The readings are taken from [An Introduction to Statistical Learning](http://www
 
     Reading: ISL  Section 10.3.1 (p.386-390), ESL  Section 6.8 (p.214-216),  Section 8.5 (p.272-276)
 
-###Unit 5: Dimensionality Reduction
+### Unit 5: Dimensionality Reduction
 
 * **Lecture 18: Linear Dimensionality Reduction and SVD**
 
@@ -168,7 +168,7 @@ The readings are taken from [An Introduction to Statistical Learning](http://www
 
    Reading: ESL  Section 14.8-9 (p.570-576)
 
-##List of Demos
+## List of Demos
 * Lecture01: Introduction to Python
 * Lecture02: KNN and Decision Trees
 * Lecture03: Naive Bayes, LDA and Logistic Regression
@@ -181,10 +181,10 @@ The readings are taken from [An Introduction to Statistical Learning](http://www
 * Lecture17: Mixture Models
 * Lecture18-20: Linear Dimensionality Reduction
 
-##Legal 
+## Legal 
 
 Copyright 2016 Benjamin M. Marlin. These materials are provided under the [GNU GENERAL PUBLIC LICENSE Version 3](http://choosealicense.com/licenses/gpl-3.0/) (GPL 3). As permitted by GPL 3 Section 7(b), all attributions present in this work must be preserved in all copies and derived works.
 
-##Support
+## Support
 
 The development of these materials is supported by the [National Science Foundation](http://www.nsf.gov) through award # IIS-1350522.
